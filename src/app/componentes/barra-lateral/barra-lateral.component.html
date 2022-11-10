@@ -1,1 +1,37 @@
-<p>barra-lateral works!</p>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="inicio"><i class="bi bi-house"></i> Home</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+
+            <!-- Usuarios -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-people"></i> Usuarios
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="crearUsuario">Crear Usuarios</a></li>
+                    <li><a class="dropdown-item" routerLink="listarUsuario">Listar Usuarios</a></li>
+                </ul>
+            </li>
+
+            <!-- Empresas -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-building"></i> Empresas
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="crearEmpresa">Crear Empresa</a></li>
+                    <li><a class="dropdown-item" routerLink="listarEmpresas">Listar Empresas</a></li>
+                </ul>
+            </li>
+
+            <!-- Contacto -->
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="contacto"><i class="bi bi-telephone"></i> Contacto</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
